@@ -1,0 +1,5 @@
+{
+  "name": "Jobtica Admin",
+  "description": "A comprehensive admin panel for managing the Jobtica portal. This application allows administrators to manage job listings, quick links, content posts, subscribers, and advertisement settings for the public-facing website.",
+  "requestFramePermissions": []
+}

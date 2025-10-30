@@ -1,0 +1,39 @@
+{
+  "name": "jobtica-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node api/index.js\"",
+    "build": "vite build",
+    "lint": "tsc",
+    "preview": "vite preview",
+    "start": "node api/index.js",
+    "test:api": "node test-api.js",
+    "setup": "bash setup-database.sh",
+    "quickstart": "bash quick-start.sh"
+  },
+  "dependencies": {
+
+    "@vercel/postgres": "^0.9.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "iron-session": "8.0.4",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/uuid": "^9.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
